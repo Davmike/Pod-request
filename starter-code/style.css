@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@400;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Chivo", sans-serif;
+  background-color: rgba(0, 0, 0, 0.616);
+  background-image: url(assets/mobile/image-host.jpg);
+  background-repeat: no-repeat;
+  background-size: 491px 767px;
+  background-position: 0px;
+  background-blend-mode: multiply;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2.4rem;
+}
+
+.pod-logo {
+  margin-top: 2.6rem;
+}
+
+.podcast-text {
+  font-size: 2.6rem;
+  font-weight: 400;
+  line-height: 3.8rem;
+  color: #54e6af;
+  margin-top: 57px;
+}
+
+.everywhere {
+  color: #fff;
+}
+
+p {
+  color: #c2cbe5;
+  font-size: 1.5rem;
+  font-weight: 100;
+  line-height: 2.5rem;
+  margin-top: 1.6rem;
+}
+
+.social-img {
+  display: flex;
+  gap: 1.7rem;
+}
+
+.features-logo {
+  max-width: 10.4rem;
+  max-height: 1.5rem;
+  margin-top: 3.8rem;
+}
+
+button {
+  padding: 1.5rem 0;
+  width: 100%;
+  border-radius: 28px;
+  border: none;
+  color: #121725;
+  background-color: #54e6af;
+}
+
+.btn-section {
+  margin-top: 5.2rem;
+  margin-bottom: 6rem;
+}
+
+input {
+  padding: 1.5rem 1.5rem;
+  width: 100%;
+  border-radius: 2.8rem;
+  border: none;
+  background-color: #2c344b;
+  color: white;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.btn {
+  margin-top: 1.6rem;
+  font-weight: 600;
+  font-size: 14px;
+  color: #121725;
+}
+
+.dots-img {
+  display: none;
+}
+
+#error {
+  color: red;
+  font-size: 1.2rem;
+  font-weight: 400;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: #121725;
+    background-blend-mode: normal;
+    background-position: right top;
+  }
+  .info {
+    background-color: #121725;
+    align-self: start;
+    width: 635px;
+    margin-top: 152px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .podcast-text {
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+    text-align: left;
+    font-weight: 400;
+  }
+
+  p {
+    margin-top: 3.1rem;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    width: 445px;
+    text-align: left;
+  }
+
+  .pod-logo {
+    position: relative;
+    right: 290px;
+  }
+
+  .social-img {
+    order: 1;
+    gap: 4rem;
+  }
+
+  .features-logo {
+    margin-bottom: 50px;
+  }
+
+  .spotify {
+    width: 9.6rem;
+    height: 2.9rem;
+  }
+
+  .apple {
+    width: 7.8rem;
+    height: 2.9rem;
+  }
+
+  .google {
+    width: 12.5rem;
+    height: 1.8rem;
+  }
+
+  .cats {
+    width: 12.9rem;
+    height: 2.6rem;
+  }
+
+  .btn-section {
+    position: relative;
+    width: 427px;
+  }
+
+  button {
+    position: absolute;
+    top: -1.3rem;
+    left: 260px;
+    width: 162px;
+    height: 3.9rem;
+  }
+
+  .dots-img {
+    display: block;
+    position: relative;
+    top: 153px;
+    right: 240px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    background-image: none;
+    background-image: url(assets/desktop/image-host.jpg);
+    background-repeat: no-repeat;
+    background-size: 888px;
+    background-position: 100% 50%;
+  }
+
+  .info {
+    width: 723px;
+    margin-left: 145px;
+  }
+
+  .pod-logo {
+    position: relative;
+    top: 65px;
+    margin-left: -388px;
+  }
+
+  .dots-img {
+    position: relative;
+    top: -68px;
+    left: 600px;
+  }
+}
